@@ -6,14 +6,17 @@ My Recommendation for use, is to create a nested Game Object, where the actual S
 
 
 
-**BillBoardSpriteController** 
+**BillBoardSpriteController Monobehavior**
+
 Handles the actual billboarding of the sprites.  Easily able to configure it to billboard the sprite along the horizontal axis as well, so that it looks at the camera should the camera take a higher angle.
 
 
-**ShadowController**
+**ShadowController Monobehavior**
+
 Simply allows the Sprite to accept lighting in the scene, and form shadows.  May need to adjust camera settings to fully enable shadows, this will largely depend on your Render Pipeline setup.
 
-**Sprite Lighting**
+**Sprite Lighting Shader Graph**
+
 A simple shadergraph that is able to get the Sprite Renderer to treat objects as though they are 3D.  All you should have to do is create a new Material, using this as its Shader.  Feel free to play around with settings to get what works best.  With this setup, you can get lighting effects similar to this:
 
 
